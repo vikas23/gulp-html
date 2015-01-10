@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>gulp-html by watilde</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>gulp-html</h1>
+        <p>gulp plugin for HTML validation, using vnu.jar</p>
+
+        <p class="view"><a href="https://github.com/watilde/gulp-html">View the Project on GitHub <small>watilde/gulp-html</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/watilde/gulp-html/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/watilde/gulp-html/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/watilde/gulp-html">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="gulp-html---" class="anchor" href="#gulp-html---" aria-hidden="true"><span class="octicon octicon-link"></span></a>gulp-html <a href="https://travis-ci.org/watilde/gulp-html"><img src="https://travis-ci.org/watilde/gulp-html.svg" alt="Build Status"></a> <a href="https://www.npmjs.org/package/gulp-html"><img src="http://img.shields.io/npm/v/gulp-html.svg" alt="NPM Version"></a> <a href="https://gemnasium.com/watilde/gulp-html"><img src="https://gemnasium.com/watilde/gulp-html.svg" alt="Dependency Status"></a>
+</h1>
+
+<p>gulp plugin for HTML validation, using the <a href="https://validator.github.io/">vnu.jar</a></p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>Run <code>npm install gulp-html</code>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-js"><pre><span class="pl-s">var</span> gulp   <span class="pl-k">=</span> <span class="pl-s3">require</span>(<span class="pl-s1"><span class="pl-pds">'</span>gulp<span class="pl-pds">'</span></span>);
+<span class="pl-s">var</span> validator <span class="pl-k">=</span> <span class="pl-s3">require</span>(<span class="pl-s1"><span class="pl-pds">'</span>gulp-html<span class="pl-pds">'</span></span>);
+
+gulp.task(<span class="pl-s1"><span class="pl-pds">'</span>html<span class="pl-pds">'</span></span>, <span class="pl-st">function</span>() {
+  <span class="pl-k">return</span> gulp.<span class="pl-sc">src</span>(<span class="pl-s1"><span class="pl-pds">'</span>src/index.html<span class="pl-pds">'</span></span>)
+  .pipe(validator())
+  .pipe(gulp.dest(<span class="pl-s1"><span class="pl-pds">'</span>dist/<span class="pl-pds">'</span></span>));
+});</pre></div>
+
+<h2>
+<a id="options" class="anchor" href="#options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<p>The options object supports the same options as the standard The Nu Markup Checker.</p>
+
+<p>See also: <a href="http://validator.github.io/validator/#options">http://validator.github.io/validator/#options</a></p>
+
+<h3>
+<a id="errors-only" class="anchor" href="#errors-only" aria-hidden="true"><span class="octicon octicon-link"></span></a>errors-only</h3>
+
+<p>Type: <code>Boolean</code></p>
+
+<p>Default: <code>false</code></p>
+
+<h3>
+<a id="format" class="anchor" href="#format" aria-hidden="true"><span class="octicon octicon-link"></span></a>format</h3>
+
+<p>Type: <code>String</code></p>
+
+<p>Default: <code>"gnu"</code></p>
+
+<h3>
+<a id="html" class="anchor" href="#html" aria-hidden="true"><span class="octicon octicon-link"></span></a>html</h3>
+
+<p>Type: <code>Boolean</code></p>
+
+<p>Default: <code>false</code></p>
+
+<h3>
+<a id="no-stream" class="anchor" href="#no-stream" aria-hidden="true"><span class="octicon octicon-link"></span></a>no-stream</h3>
+
+<p>Type: <code>Boolean</code></p>
+
+<p>Default: <code>false</code></p>
+
+<h3>
+<a id="verbose" class="anchor" href="#verbose" aria-hidden="true"><span class="octicon octicon-link"></span></a>verbose</h3>
+
+<p>Type: <code>Boolean</code></p>
+
+<p>Default: <code>false</code></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Copyright 2015 Daijiro Wachi</p>
+
+<p>This software is released under the MIT License. See <a href="/LICENSE">LICENSE</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/watilde">watilde</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-35821550-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
