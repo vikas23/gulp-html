@@ -1,5 +1,5 @@
 {
-  "name": "gulp-html-new",
+  "name": "gulp-html",
   "version": "0.0.1",
   "description": "gulp plugin for HTML validation, using vnu.jar",
   "main": "index.js",
