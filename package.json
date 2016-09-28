@@ -1,6 +1,6 @@
 {
-  "name": "gulp-html",
-  "version": "0.4.4",
+  "name": "gulp-html-new",
+  "version": "0.0.1",
   "description": "gulp plugin for HTML validation, using vnu.jar",
   "main": "index.js",
   "scripts": {
@@ -14,12 +14,12 @@
     "gulpplugin",
     "htmllint"
   ],
-  "author": "Daijiro Wachi",
+  "author": "Vikas Kumar",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/watilde/gulp-html/issues"
   },
-  "homepage": "https://github.com/watilde/gulp-html",
+  "homepage": "https://github.com/vikas23/gulp-html",
   "devDependencies": {
     "gulp": "^3.8.10"
   },
